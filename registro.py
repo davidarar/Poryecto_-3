@@ -66,3 +66,5 @@ elif opcion == 3:
     archivo.close()
 else:
     print("Debes de Elegir una opcion anterior")
+    
+#falta hacer la parte restante
