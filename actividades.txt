@@ -1,0 +1,3 @@
+{'descripcion': 'Estudiar para laboratorio', 'inicio': '31/5/2022', 'final': '31/5/2022','emociones':[]}
+{'descripcion': 'Terminar proyecto taller', 'inicio': '24/5/2022', 'final': '12/6/2022'}
+{'descripcion': 'Ver Jurassic world dominion', 'inicio': '14/6/2022', 'final': '14/6/2022'}
