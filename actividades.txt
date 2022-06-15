@@ -1,3 +1,3 @@
-{'descripcion': 'Ver un capitulo de Tokyo Ghoul', 'fecha inicio': '2022-06-13', 'hora inicio': '01:00', 'fecha final': '2022-06-13', 'hora final': '04:30', 'emociones registradas': []}
-{'descripcion': 'Terminar proyecto de progra', 'fecha inicio': '2022-06-13', 'hora inicio': '07:00', 'fecha final': '2022-06-13', 'hora final': '12:00', 'emociones registradas': []}
-{'descripcion': 'Repasar matematicas', 'fecha inicio': '2022-06-13', 'hora inicio': '12:00', 'fecha final': '2022-06-13', 'hora final': '14:40', 'emociones registradas': []}
+{'descripcion': 'Hacer tarea de ingles', 'fecha inicio': '2022-06-14', 'hora inicio': '14:00', 'fecha final': '2022-06-14', 'hora final': '18:01', 'emociones registradas': []}
+{'descripcion': 'Ver pelicula', 'fecha inicio': '2022-06-14', 'hora inicio': '14:00', 'fecha final': '2022-06-14', 'hora final': '15:06', 'emociones registradas': []}
+{'descripcion': 'Terminar proyecto', 'fecha inicio': '2022-06-14', 'hora inicio': '18:40', 'fecha final': '2022-06-14', 'hora final': '18:59', 'emociones registradas': []}

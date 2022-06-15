@@ -18,7 +18,6 @@ class Lista: # Clase Lista
             puntero = puntero.sig
         puntero.sig = nuevo
 
-
 class Actividades(Lista): # Clase Actividades, hereda de Lista
 
     def __init__(self, descripcion, fecha_inicio, hora_inicio, fecha_final, hora_final, emociones_registradas):
@@ -30,13 +29,34 @@ class Actividades(Lista): # Clase Actividades, hereda de Lista
         self.hora_final = hora_final
         self.emociones_registradas = emociones_registradas
 
+    def listar_actividades(self):
+        l=obtener_lista_actividades()
+        lista_de_actividades=[]
+        return self.__listar_actividades(self,l,lista_de_actividades)
+
+    def __listar_actividades(self,l,lista_de_actividades):
+        """Método que lista las actividades registradas en el archivo 'actividades.txt'
+        - args:
+            -   l = lista de actividades 
+            -   lista_de_actividades = lista donde se guardarán las actividades"""
+
+        if l!=None:
+            lista_de_actividades.append({'descripcion': l.descripcion,
+                                        'fecha inicio': l.fecha_inicio,
+                                        'hora inicio': l.hora_inicio,
+                                        'fecha final': l.fecha_final,
+                                        'hora final': l.hora_final,
+                                        'emociones registradas': l.emociones_registradas})
+            lista_de_actividades=self.__listar_actividades(self,l.sig,lista_de_actividades)
+
+        return lista_de_actividades
+
     def obtener_actividad(self, descrip):
         """Método que busca una actividad en la lista vinculada para agregarle una emoción
         -   args: 
                 -   descrip = descripcion de la actividad
         - return: 
             -   puntero = puntero a la actividad encontrada"""
-
         puntero = self 
         try:
             while puntero.descripcion != descrip:
@@ -128,3 +148,4 @@ def obtener_lista_actividades():
     finally:
         lector.close()
     return lista
+
